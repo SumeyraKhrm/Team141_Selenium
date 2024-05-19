@@ -35,6 +35,7 @@ public class C02_driverManageMethodlari {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // dinamik bekleme
+        // süre tanımlanırken sayafanın açılma süresi baz alınır, ve test sürecinide fazla uzatmamalıdır
 
 
         System.out.println("Maximize konum : "+driver.manage().window().getPosition());
